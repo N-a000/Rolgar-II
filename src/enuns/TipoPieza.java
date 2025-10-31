@@ -1,4 +1,4 @@
-package enums;
+package src.enuns;
 
 /**
  * Enumeración que representa las diferentes tipos de piezas que pueden existir en el juego Rolgar II.

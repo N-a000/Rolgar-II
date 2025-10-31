@@ -1,11 +1,10 @@
-package tablero;
+package src.tablero;
 
-//importaciones necesarias
-import coordenada.Coordenada;
 import estructuras.lista.IteradorLista;
 import estructurtas.lista.ListaSimplementeEnlazada;
-import piezas.Pieza;
-import piezas.Vacio;
+import src.coordenada.Coordenada;
+import src.piezas.Pieza;
+import src.piezas.Vacio;
 import utils.ValidacionesUtils;
 
 /**

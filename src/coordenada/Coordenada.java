@@ -1,4 +1,4 @@
-package coordenada;
+package src.coordenada;
 
 /**
  * Clase Coordenada representa una coordenada tridimensional en un tablero de juego.

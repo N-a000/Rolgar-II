@@ -1,8 +1,8 @@
-package piezas;
+package src.piezas;
 
-import coordenada.Coordenada;
-import enums.TipoPieza;
 import jugador.Jugador;
+import src.coordenada.Coordenada;
+import src.enuns.TipoPieza;
 import utils.ValidacionesUtils;
 
 /**

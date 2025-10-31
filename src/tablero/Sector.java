@@ -1,8 +1,7 @@
-package tablero;
+package src.tablero;
 
-//Importaciones necesarias
-import coordenada.Coordenada;
-import piezas.Pieza;
+import src.coordenada.Coordenada;
+import src.piezas.Pieza;
 import utils.ValidacionesUtils;
 
 /**
