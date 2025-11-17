@@ -2,7 +2,7 @@ package src.piezas;
 
 import jugador.Jugador;
 import src.coordenada.Coordenada;
-import src.enuns.TipoPieza;
+import src.enums.TipoPieza;
 import utils.ValidacionesUtils;
 
 /**
@@ -127,5 +127,6 @@ public class Pieza {
         ValidacionesUtils.noNulo(coordenadas, "Coordenadas");
         this.coordenadas = coordenadas;
     }
+
 
 }  
