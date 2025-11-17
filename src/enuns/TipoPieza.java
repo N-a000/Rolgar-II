@@ -1,4 +1,4 @@
-package src.enuns;
+package src.enums;
 
 /**
  * Enumeración que representa las diferentes tipos de piezas que pueden existir en el juego Rolgar II.
@@ -20,4 +20,5 @@ public enum TipoPieza {
     RAMPA,
     AGUA,
     VACIO
+
 }
