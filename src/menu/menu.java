@@ -9,7 +9,6 @@ import java.util.Scanner;
 
 /**
  * Clase principal del juego Rolgar II.
- * Permite probar las funcionalidades básicas del TP2.
  */
 public class menu {
 
