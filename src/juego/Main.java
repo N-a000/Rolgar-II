@@ -2,6 +2,7 @@ package src.juego;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import src.tablero.Tablero;
 import src.coordenada.Coordenada;
@@ -12,7 +13,63 @@ import src.piezas.Pieza;
 import src.juego.CondicionesDeVictoria;
 
 public class Main {
+
     public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        // ==============================
+        //        MENÚ DE BIENVENIDA
+        // ==============================
+        System.out.println("=======================================");
+        System.out.println("           BIENVENIDO A ROLGAR II      ");
+        System.out.println("=======================================");
+
+        System.out.println("\nRolgar II es un juego de combate táctico en un tablero 3D.");
+        System.out.println("Cada jugador controla un personaje y puede usar cartas de poder");
+        System.out.println("para atacar, defender o aplicar efectos especiales.\n");
+
+        System.out.println("CÓMO SE JUEGA:");
+        System.out.println("- Cada jugador inicia en una esquina del tablero.");
+        System.out.println("- Podés moverte, atacar o usar cartas de poder.");
+        System.out.println("- Si la vida del rival llega a 0, ganás la partida.\n");
+
+        // ------------------------------
+        //    SELECCIÓN DE DIFICULTAD
+        // ------------------------------
+        System.out.println("Seleccioná la dificultad:");
+        System.out.println("1. Fácil");
+        System.out.println("2. Medio");
+        System.out.println("3. Difícil");
+        System.out.print("Opción: ");
+
+        int dificultad = 0;
+
+        // Validar que el usuario ingrese 1, 2 o 3
+        while (dificultad < 1 || dificultad > 3) {
+            if (!sc.hasNextInt()) {
+                System.out.print("Por favor ingrese un número válido (1-3): ");
+                sc.next();
+                continue;
+            }
+
+            dificultad = sc.nextInt();
+
+            if (dificultad < 1 || dificultad > 3) {
+                System.out.print("Opción inválida, elija entre 1 y 3: ");
+            }
+        }
+
+        System.out.println("\nDificultad seleccionada: " +
+                (dificultad == 1 ? "Fácil" : (dificultad == 2 ? "Medio" : "Difícil")));
+
+        System.out.println("\nCargando partida...");
+        System.out.println("=======================================\n");
+
+        // ==============================
+        //   INICIO ORIGINAL DEL MAIN
+        //   (NO SE MODIFICÓ NADA)
+        // ==============================
 
         System.out.println("=== ROLGAR II ===");
 
@@ -72,5 +129,7 @@ public class Main {
         } else {
             System.out.println("\nLa partida continua...");
         }
+
+        sc.close();
     }
 }
